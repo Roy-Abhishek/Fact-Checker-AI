@@ -110,7 +110,7 @@ def main_result(text):
         result += "The following is a list of the studies referenced:"
 
         for j, study in enumerate(item["studies"]):
-            result += f"    Title: {study["title"]}."
+            result += f"    Title: {study['title']}."
             result += f"    Authors: {study['authors']}"
             result += f"    Year: {study['year']}"
             result += f"    Source: {study['source']}"
