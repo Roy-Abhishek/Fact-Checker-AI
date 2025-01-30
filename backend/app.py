@@ -9,7 +9,7 @@ def home():
 
 @app.route("/analysis/<string:claims>")
 def give_analysis(claims):
-    result = main_result(str(claims))
+    result = main_result(str(claims))    
     return jsonify({"result": result})
 
 

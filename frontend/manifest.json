@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Fact Checker AI",
+    "version": "1.0",
+    "description": "Verifies facts using OpenAI and a Pinecone database populated with peer-reviewed studies.",
+    "permissions": [
+      "contextMenus",
+      "activeTab",
+      "scripting"
+    ],
+    "host_permissions": [
+      "http://127.0.0.1:5001/*",
+      "http://helloraspy.duckdns.org:4001/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "left_click.html",
+      "default_icon": "fact_checker.png"
+    }
+}
